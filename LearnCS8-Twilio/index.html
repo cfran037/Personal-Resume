@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Handmade crochet flowers that can be sole individually or in bouquets">
+    <meta name="author" content="862363327">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Title of your Website -->
+    <title>Crochet Flowers</title>
+    <link href="product.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="site-header sticky-top py-1">
+    <!-- Top Menu Bar -->
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2 d-none d-md-inline-block" id="menu-item-1" href="https://www.hottopic.com/homepage/?cm_mmc=SEM-_-GGL-_-BR-_-DMY-_-54585000_1724125320&gclid=Cj0KCQjw9deiBhC1ARIsAHLjR2A-YP2b9pkn3GPRfU4KdpQfHX0OAmbMkg3AdBXbST9-12S05ci_ysEaAskCEALw_wcB" target="_blank">Hot Topic</a>
+        <a class="py-2 d-none d-md-inline-block" id="menu-item-2" href="https://www.boxlunch.com/homepage?cm_mmc=SEM-_-GGL-_-BR-_-DMY-_-541787926_22753559686&gclid=Cj0KCQjw9deiBhC1ARIsAHLjR2BtAZvXaCThB1JCMUq7CNIXcl0D1gmbDEPJlhaULDR0gSAGX0zB4lgaAlS2EALw_wcB" target="_blank">BoxLunch</a>
+        <a class="py-2 d-none d-md-inline-block" id="menu-item-3" href="https://www.amazon.com/?tag=amazusnavi-20&hvadid=381823327651&hvpos=&hvnetw=g&hvrand=5956182268287598739&hvpone=&hvptwo=&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031120&hvtargid=kwd-10573980&ref=pd_sl_7j18redljs_e&hydadcr=28883_11845442" target="_blank">Amazon</a>
+        <a class="py-2 d-none d-md-inline-block" id="menu-item-4" href="https://www.barnesandnoble.com/" target="_blank">Barnes and Noble</a>
+        <a class="py-2 d-none d-md-inline-block" id="menu-item-5" href="https://www.apple.com/store?afid=p238%7CseIEs444j-dc_mtid_1870765e38482_pcrid_657466515819_pgrid_13945964887_pntwk_g_pchan__pexid__&cid=aos-us-kwgo-brand-apple--slid---product-" target="_blank">Apple</a>
+        <a class="py-2 d-none d-md-inline-block" id="menu-item-6" href="https://www.etsy.com/?utm_source=google&utm_medium=cpc&utm_term=etsy_e&utm_campaign=Search_US_Brand_GGL_ENG_General-Brand_Core_All_Exact&utm_ag=A1&utm_custom1=_k_EAIaIQobChMI4Ium16_i_gIVg8bjBx2o7gQpEAAYASAAEgIGgvD_BwE_k_&utm_content=go_227553629_16342445429_536666953103_kwd-1818581752_c_&utm_custom2=227553629&gclid=EAIaIQobChMI4Ium16_i_gIVg8bjBx2o7gQpEAAYASAAEgIGgvD_BwE" target="_blank">Etsy</a>
+        <a class="py-2 d-none d-md-inline-block" id="menu-item-7" href="https://www.michaels.com/" target="_blank">Michaels</a>
+    </div>
+</nav>
+<!-- Main Header Section h1-->
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-0 text-center bg-light">
+    <div class="col-md-8 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 font-weight-normal">Get a forever bouquet!</h1>
+        <p class="lead font-weight-normal">Ever bought flowers and wished it's beauty could last? Now you have the option! With a selection of roses, carnations, daisies, lillies, lavenders and more. Your dream bouquet is no longer just a fantasy. Anything is possible!</p>
+        <a class="btn btn-outline-secondary" href="https://www.youtube.com/watch?v=ZzTdWfziNI0">Coming soon</a>
+    </div>
+</div>
+<!-- Left Tile -->
+<div class="d-md-flex flex-md-equal w-100">
+    <div class="bg-dark pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">Sign up</h2>
+            <p class="lead">Sign up now to get instant access to our educational content</p>
+        </div>
+        <!-- Web form when submitted will send a text message -->
+        <form class="p-2" onsubmit="sendTextMessage(); return false;">
+            <!-- Full Name Form Field -->
+            <div class="form-group">
+                <label for="example-first-name">Full Name</label>
+                <input type="text" value="Full Name" class="form-control" id="example-first-name" aria-describedby="emailHelp">
+            </div>
+            <!-- Phone Number Form Field -->
+            <div class="form-group">
+                <label for="example-tel-input">Phone number</label>
+                <input type="tel" class="form-control" value="1408555555" id="example-tel-input">
+            </div>
+            <!-- JavaScript that handles onSubmit logic -->
+            <!-- Configure the XHR request below with your own credentials -->
+            <script>
+            function sendTextMessage() {
+                console.log("Hello world!");
+                var xhr = new XMLHttpRequest();
+                var accountSID = "ACe1686467219fa45c19b24ae06f0d07bc";
+                var authToken = "38704c2a0a327075f44b613e08fa18bf";
+                var base64encoded = accountSID + ":" + authToken;
+                var params = "To=" + document.getElementById('example-tel-input').value + "&From=" + "18444920703" + "&Body=" + "Hello " + document.getElementById('example-first-name').value + " Hi Charley :) "
+                xhr.open("POST", "https://api.twilio.com/2010-04-01/Accounts/" + accountSID + "/Messages.json", true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.setRequestHeader('Authorization', 'Basic ' + btoa(base64encoded));
+                xhr.send(params);
+            }
+            </script>
+            <!-- Submit button that will execute the sendTextMessage function -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <!-- Right Tile -->
+    <div class="bg-light pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">Purple Lillies</h2>
+            <p class="lead">This bouquet was requested for a college graduate whose favorite color was purple.</p>
+            <img class="mx-auto" src="IMG_6077.webp" height="250px">
+        </div>
+        <div class="mx-auto" style="width: 80%; height: 100px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+</div>
+  </body>
+</html>
